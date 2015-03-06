@@ -1,1 +1,3 @@
 cwicenie 4 zdalne repo
+
+zmiana zawartosci cwiczenia 4 z katalogu cw_2
