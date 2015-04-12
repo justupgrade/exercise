@@ -32,6 +32,15 @@
 		
 		//------------------- TESTS --------------------------
 		
+		public function test4(){
+			$poll = Poll::LoadPoll(1);
+			$question = Question::CreateNewQuestion(1, "question to delete");
+			$response = Response::CreateResponse($question->getID(), "response will be deleted automatically");
+			$this->assertEquals(1, Question::DeleteQuestion($question->getID()));
+			//reesponse deleted because of cascade
+			$this->assertNull(Response::LoadResponse($response->getID()));
+		}
+		
 		//response and question cascade test
 		public function test3() {
 			$poll = Poll::LoadPoll(1);
