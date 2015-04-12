@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+	<polls id="1" name="Poll1" link="poll1" />
+	<polls id="2" name="Poll2" link="poll2" />
+	
+	<questions id="1" text="First Question For All" />
+	<questions id="2" text="Question 2 Text" />
+	<questions id="3" text="Question 3 Text" />
+	<questions id="4" text="Question 4 Text" />
+	<questions id="5" text="Question 5 Text" />
+	
+	<responses id="1" text="Response 1 To Question 1" questionID="1" />
+	<responses id="2" text="Response 2 To Question 1" questionID="1" />
+	<responses id="3" text="Response 1 To Question 2" questionID="2" />
+	<responses id="4" text="Response 1 To Question 3" questionID="3" />
+	<responses id="5" text="Response 1 To Question 4" questionID="4" />
+	<responses id="6" text="Response 1 To Question 5" questionID="5" />
+	
+	<polls_questions id="1" pollID="1" questionID="1" />
+	<polls_questions id="2" pollID="1" questionID="2" />
+	<polls_questions id="3" pollID="1" questionID="3" />
+	<polls_questions id="4" pollID="2" questionID="1" />
+	<polls_questions id="5" pollID="2" questionID="4" />
+	<polls_questions id="6" pollID="2" questionID="5" />
+	
+</dataset>

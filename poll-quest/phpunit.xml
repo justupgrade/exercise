@@ -1,0 +1,28 @@
+<phpunit xsi:noNamespaceSchemaLocation="http://schema.phpunit.de/4.5/phpunit.xsd"
+	backupGlobals="true" cacheTokens="false" colors="true">
+	<php>
+		<var name="DB_DSN" value="mysql:dbname=poll_quest;host=localhost" />
+		<var name="DB_USER" value="justupgrade" />
+		<var name="DB_PASSWD" value="test" />
+		<var name="DB_NAME" value="poll_quest" />
+		<var name="DB_HOST" value="localhost" />
+	</php>
+	<testsuites>
+		<testsuite name="all">
+			<directory>./test</directory>
+			<exclude></exclude>
+		</testsuite>
+		<testsuite name="polls">
+			<file>./test/PollTest.php</file>
+		</testsuite>
+		<testsuite name="questions">
+			<file>./test/QuestionTest.php</file>
+		</testsuite>
+		<testsuite name='responses'>
+			<file>./test/ResponseTest.php</file>
+		</testsuite>
+		<testsuite name='integration'>
+			<file>./test/IntegrationTest.php</file>
+		</testsuite>
+	</testsuites>
+</phpunit>
