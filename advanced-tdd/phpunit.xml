@@ -1,0 +1,19 @@
+<phpunit xsi:noNamespaceSchemaLocation="http://schema.phpunit.de/4.5/phpunit.xsd"
+	backupGlobals="true" cacheTokens="false" colors="true">
+	<!--  testsuites>
+		<testsuite name="all">
+			<directory>./tests</directory>
+			<exclude></exclude>
+		</testsuite>
+		<testsuite name="system">
+			<file>./tests/SystemTest.php</file>
+		</testsuite>
+	</testsuites-->
+	<listeners>
+		<listener class=
+			"PHPUnit_Extensions_Selenium2TestCase_ScreenshotListener">
+			<arguments>
+			<string>./screenshots/</string></arguments>
+			</listener>
+	</listeners>
+</phpunit>
