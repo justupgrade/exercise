@@ -5,3 +5,5 @@
 .settings
 composer.lock
 composer.phar
+/advanced-tdd/vendor
+/advanced-tdd/selenium-server-standalone-2.45.0.jar
